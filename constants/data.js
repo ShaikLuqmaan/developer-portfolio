@@ -33,6 +33,14 @@ const userData = {
       • Used MVC architecture to build the application with React Native in the front end and Node.js and PostgreSQL in the backend of the project`,
     },
     {
+      title: "Green Commute",
+      link: "",
+      description: `
+      • Built an application where users can search for jobs and also find the commute route options based on the job location.
+      • Documented APIs using Swagger.
+    `
+    },
+    {
       title: "College Coding Community",
       link: "https://github.com/ShaikLuqmaan/stackhub",
       description: `
@@ -46,6 +54,11 @@ const userData = {
       description: "Indecisive App is a React web application that is used to make decisions. All you have to do is add options and the application will randomly choose an option for you.",
     },
     {
+      title: "BAYMAX",
+      link: "",
+      description: `Developed a secured platform that aims to increase communication between doctors and patients, where the users can provide medical details and could get doctors’ recommendations and services in the nearest location.`   
+    },
+    {
       title: "Hangman",
       link: "https://github.com/ShaikLuqmaan/indecisive-app",
       description: `
@@ -55,7 +68,7 @@ const userData = {
   ],
   about: {
     title:
-      "I'm a full-stack developer that loves building products and web applications",
+      "I'm a full-stack developer who loves building products and web applications",
       description: [
         `I am a Full-stack developer with 3 years of experience working in fast-paced environments
         and delivering privacy-related features that satisfy customers. I have majorly contributed
@@ -90,18 +103,18 @@ const userData = {
       company: "Osmania University",
       year: "2020",
       companyLink: "https://upes.co.in",
-      desc: "Major in Computer Science and Engineering with a CGPA of 8.7",
+      desc: "Graduated with a major in Computer Science and Engineering, achieving a CGPA of 8.7.",
     },    
     {
       title: "Internship",
       company: "ValueMomentum",
       year: "2019",
       companyLink: "https://www.valuemomentum.com/",
-      desc: "Actively contributed to the development of UI pages for various features using React",
+      desc: `Actively contributed to the development of UI pages for various features using React and also utilized SOLID principles, clean code techniques, and OOP concepts in the development phase.`,
     },
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/1RZ-3VW5o1JoS1rZQpNmnFYTqJ9QwLIQ8/view?usp=drive_link",
+    "https://drive.google.com/file/d/1W2ak48kxXZlopK2bFOuvAoe6HaWWfYLs/view?usp=drive_link",
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/shaik-luqmaan/",
     github: "https://github.com/ShaikLuqmaan",

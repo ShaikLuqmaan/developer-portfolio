@@ -9,6 +9,9 @@ export default function ContainerBlock({ children, ...customMeta }) {
 
   return (
     <div>
+      <Head>
+        <title>{"Luqmaan Shaik - Portfolio"}</title>
+      </Head>
       <main className="dark:bg-gray-800 w-full">
         <Navbar />
         <div>{children}</div>

@@ -6,7 +6,7 @@ export default function AboutMe() {
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          About Me.
+          About Me
         </h1>
       </div>
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
@@ -23,7 +23,23 @@ export default function AboutMe() {
         <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
           {/* Social Buttons */}
           <div className="inline-flex flex-col">
-          <div>
+          <div> 
+              <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
+                Opportunities
+              </h1>
+              <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
+                I am actively seeking a full-time CO-OP opportunity in Canada. If my skills align with your needs, I would appreciate the opportunity to share my{" "}
+                <a
+                  href={userData.resumeUrl}
+                  target="__blank"
+                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                >
+                  Resume
+                </a>
+              </p>
+
+            </div>
+          <div  className="mt-8">
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
                 Contact
               </h1>
@@ -78,24 +94,8 @@ export default function AboutMe() {
                 </p>
               </div>
 
-            </div> 
-            <div className="mt-8"> 
-              <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                Opportunities
-              </h1>
-              <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                I'm looking for a full-time CO-OP opportunity currently, If you see me as a good fit,
-                check my{" "}
-                <a
-                  href={userData.resumeUrl}
-                  target="__blank"
-                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
-                >
-                  CV
-                </a>{" "}
-                and I believe my skills and experience make me a great fit.
-              </p>
-            </div>
+          </div> 
+
             {/* Social Links */}
             <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
               Social Links

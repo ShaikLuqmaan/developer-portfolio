@@ -44,7 +44,7 @@ export default function Navbar() {
             Projects
           </Link>
           <Link href="/experience" className="text-base font-normal text-gray-800 dark:text-gray-300">
-            Experience
+            Journey
           </Link>
         </div>
 
@@ -56,7 +56,7 @@ export default function Navbar() {
             Projects
           </Link>
           <Link href="/experience" className={`text-base ${router.asPath === "/experience" ? "text-gray-800 font-bold dark:text-gray-400" : "text-gray-600 dark:text-gray-300 font-normal"}`}>
-            Experience
+            Journey
           </Link>
         </div>
         </div>
