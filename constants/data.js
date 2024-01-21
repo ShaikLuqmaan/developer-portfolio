@@ -1,61 +1,72 @@
 const userData = {
   githubUsername: "manuarora700",
-  name: "Luqmaan Shaik",
+  name: "LS",
   designation: "Full-Stack Developer",
   avatarUrl: "/avatar.png",
   email: "shaikl@uwindsor.ca",
   phone: "+1 (226) 961 8969",
-  address: "Windsor, Ontario, Canada.",
+  address: "Windsor, ON, Canada.",
   projects: [
     {
-      title: "Tailwind Master Kit",
-      link: "https://tailwindmasterkit.com",
-      imgUrl: "/tmk.jpg",
-    },
-    {
-      title: "PlaceholderTech",
-      link: "https://placeholdertech.in",
-      imgUrl: "/placeholdertech.png",
-    },
-    {
       title: "Portfolio",
-      link: "https://manuarora.in",
-      imgUrl: "/portfolio.png",
+      link: "https://github.com/ShaikLuqmaan/developer-portfolio",
+      description: `• Created a personal developer portfolio using Next.js for smooth web performance and TailwindCSS for a clean and stylish design.
+      • Made the portfolio deployment  on Vercel, ensuring it's always available and showcases the latest projects and accomplishments.`,
     },
     {
-      title: "CovidRescue",
-      link: "https://covidrescue.co.in",
-      imgUrl: "/covidrescue.png",
+      title: "Client-Server using Sockets",
+      link: "https://github.com/ShaikLuqmaan/Client-Server-Using-Sockets",
+      description: `• Implemented advanced socket communication to facilitate concurrent interactions with multiple clients.
+      • Introduced an  mirrored server architecture, effectively managing alternating client connections for load balancing`,
     },
     {
-      title: "Algochurn",
-      link: "https://algochurn.com",
-      imgUrl: "/algochurn.png",
+      title: "Weatherflow",
+      link: "",
+      description: `• Developed an Extract, Transform, and Load (ETL) and visualization pipeline for weather data using Airflow, MySQL Server and Tableau
+      • The source of data is an API provided by OpenWeatherMap, a weather information aggregation firm`,
     },
     {
-      title: "Playground",
-      link: "https://play.placeholdertech.in",
-      imgUrl: "/playground.png",
+      title: "GRE Learning App",
+      link: "https://github.com/MyGREPrep/MyGREPrep",
+      description: `
+      • Built a mobile application that allows students to prepare for the GRE by watching videos on each topic and taking mock tests
+      • Used MVC architecture to build the application with React Native in the front end and Node.js and PostgreSQL in the backend of the project`,
     },
     {
-      title: "Feedmeback",
-      link: "https://feedmeback.vercel.app",
-      imgUrl: "/feedmeback.png",
+      title: "College Coding Community",
+      link: "https://github.com/ShaikLuqmaan/stackhub",
+      description: `
+      • Developed a platform tailored for the coding community at Muffakham Jah College of Engineering & Technology.
+      • Facilitated collaborative learning by allowing users to post and resolve programming-related queries, upvote posts, and explore user profiles for a richer coding experience.
+    `
     },
     {
-      title: "Devmedium",
-      link: "https://devmedium.vercel.app",
-      imgUrl: "/devmedium.png",
+      title: "Indecisive App",
+      link: "https://github.com/ShaikLuqmaan/indecisive-app",
+      description: "Indecisive App is a React web application that is used to make decisions. All you have to do is add options and the application will randomly choose an option for you.",
+    },
+    {
+      title: "Hangman",
+      link: "https://github.com/ShaikLuqmaan/indecisive-app",
+      description: `
+      • Developed a word game in Java where players guess a word by revealing letters, with a limited number of chances.
+      • Implemented a user-friendly interface allowing players to interactively guess letters until solving the word or running out of attempts.`   
     },
   ],
   about: {
     title:
-      "I'm a software developer that loves building products and web applications that impact millions of lives",
-    description: [
-      `I've been developing full-stack application since I was 10 years old. I didn't know what full-stack meant at that time because the term was not coined back then. I'm so out of content right now that I'm literally crying writing this text since lorem text is so 2012 now.`,
-      `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and - for obvious reasons - if you knew bootstrap, you were cool.`,
-      `But now, I'm a legend. I've been coding in React, Angular, Vue, Svelte, Node.js, Express, Fastify, MongoDB, MySQL, Bootstrap, Tailwind, C, C++, C#, Rust, Haskell, Perl, PHP, Assembly, Logo and YouDontKnowShit programming language etc to name a few. Although I barely know the syntax (Psst, Stack overflow!), I consider myself a Ninja developer I'm laughing right now.`,
-    ],
+      "I'm a full-stack developer that loves building products and web applications",
+      description: [
+        `I am a Full-stack developer with 3 years of experience working in fast-paced environments
+        and delivering privacy-related features that satisfy customers. I have majorly contributed
+        to a B2B web application using technologies like React, TypeScript, GraphQL, gRPC, Apollo Client,
+        Node and Express. I have also designed and developed client-side and server-side SDKs in
+        JavaScript, React, Node, and Java programming languages. Addressed customer requests quickly
+        and efficiently, prioritizing immediate solutions and ensuring high customer satisfaction.
+        I was the go-to person in my team for handling customer requests, always making sure to
+        quickly find the best solutions.`
+      ],
+      
     currentProject: "",
     currentProjectUrl: "",
   },
@@ -63,17 +74,24 @@ const userData = {
     {
       title: "Masters in Applied Computing",
       company: "University of Windsor",
-      year: "2023 - 2024",
+      year: "Current",
       companyLink: "https://www.uwindsor.ca/",
-      desc: "Currently pursuing a Master of Applied Computing degree at the University of Windsor",
+      desc: "Pursuing a Master of Applied Computing degree at the University of Windsor",
     },
     {
       title: "Software Engineer III",
       company: "Zemoso Technologies",
-      year: "2020 - 2023",
+      year: "2023",
       companyLink: "https://www.zemosolabs.com/",
       desc: "Designed and developed client-side and server-side SDKs in JS, React,  Node and Java programming languages and contributed on a privacy-related web application",
     },
+    {
+      title: "Bachelor of Engineering",
+      company: "Osmania University",
+      year: "2020",
+      companyLink: "https://upes.co.in",
+      desc: "Major in Computer Science and Engineering with a CGPA of 8.7",
+    },    
     {
       title: "Internship",
       company: "ValueMomentum",
@@ -81,16 +99,9 @@ const userData = {
       companyLink: "https://www.valuemomentum.com/",
       desc: "Actively contributed to the development of UI pages for various features using React",
     },
-    {
-      title: "Bachelor of Engineering",
-      company: "Osmania University",
-      year: "2016 - 2020",
-      companyLink: "https://upes.co.in",
-      desc: "Major in Computer Science and Engineering with a CGPA of 8.7",
-    }
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
+    "https://drive.google.com/file/d/1RZ-3VW5o1JoS1rZQpNmnFYTqJ9QwLIQ8/view?usp=drive_link",
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/shaik-luqmaan/",
     github: "https://github.com/ShaikLuqmaan",

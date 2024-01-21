@@ -15,13 +15,7 @@ export default function AboutMe() {
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
             style={{ lineHeight: "3rem" }}
           >
-            {userData.about.title}. Currently working on{" "}
-            <a
-              className="bg-red-500 rounded-md px-2 py-1 text-white"
-              href={userData.about.currentProjectUrl}
-            >
-              {userData.about.currentProject} ✈️
-            </a>
+            {userData.about.title}
           </p>
         </div>
       </div>
@@ -29,27 +23,68 @@ export default function AboutMe() {
         <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
           {/* Social Buttons */}
           <div className="inline-flex flex-col">
-            <div>
+          <div>
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
                 Contact
               </h1>
-              <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                For any sort help / enquiry, shoot a{" "}
-                <a
-                  href={`mailto:${userData.email}`}
-                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+              <div className="flex flex-row items-center space-x-6 mt-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-telephone-fill h-4 w-4 text-blue-500"
+                  viewBox="0 0 16 16"
                 >
-                  mail
-                </a>{" "}
-                and I'll get back. I swear.
-              </p>
-            </div>
-            <div className="mt-8">
+                  <path
+                    fillRule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+                <p className="text-dark-200 font-light text-md">
+                  {userData.phone}
+                </p>
+              </div>
+              
+              <div className="flex flex-row items-center space-x-6 mt-4 ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-envelope-fill h-4 w-4 text-blue-500"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                </svg>
+                <p className="text-dark-300 font-light text-md">
+                  {userData.email}
+                </p>
+              </div>
+
+              <div className="flex flex-row items-center space-x-6 mt-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-pin-fill h-4 w-4 text-blue-500"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z" />
+                </svg>
+                <p className="text-dark-300 font-light text-md">
+                  {userData.address}
+                </p>
+              </div>
+
+            </div> 
+            <div className="mt-8"> 
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
-                Job Opportunities
+                Opportunities
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                I'm looking for a job currently, If you see me as a good fit,
+                I'm looking for a full-time CO-OP opportunity currently, If you see me as a good fit,
                 check my{" "}
                 <a
                   href={userData.resumeUrl}
@@ -58,7 +93,7 @@ export default function AboutMe() {
                 >
                   CV
                 </a>{" "}
-                and I'd love to work for you.
+                and I believe my skills and experience make me a great fit.
               </p>
             </div>
             {/* Social Links */}
@@ -103,58 +138,28 @@ export default function AboutMe() {
               </p>
             ))}
 
-            <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
+            <h1 className="text-gray-800 dark:text-white bg-green-300 dark:bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold ">
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/c/c.png" className="h-20 w-20 mx-4 my-4" alt="C" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/html/html.png" className="h-20 w-20 mx-4 my-4" alt="HTML" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/css/css.png" className="h-20 w-20 mx-4 my-4" alt="CSS" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" className="h-20 w-20 mx-4 my-4" alt="JavaScript" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png" className="h-20 w-20 mx-4 my-4" alt="TypeScript" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" className="h-20 w-20 mx-4 my-4" alt="React" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/nextjs/nextjs.png" className="h-20 w-20 mx-4 my-4" alt="Next.js" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/express/express.png" className="h-20 w-20 mx-4 my-4" alt="Express.js" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png" className="h-20 w-20 mx-4 my-4" alt="Node.js" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/grpc/grpc.png" className="h-20 w-20 mx-4 my-4" alt="gRPC" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/graphql/graphql.png" className="h-20 w-20 mx-4 my-4" alt="GraphQL" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/mysql/mysql.png" className="h-20 w-20 mx-4 my-4" alt="MySQL" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/mongodb/mongodb.png" className="h-20 w-20 mx-4 my-4" alt="MongoDB" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/storybook/storybook.png" className="h-20 w-20 mx-4 my-4" alt="Storybook" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" className="h-20 w-20 mx-4 my-4" alt="Docker" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/java/java.png" className="h-20 w-20 mx-4 my-4" alt="Java" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/git/git.png" className="h-20 w-20 mx-4 my-4" alt="Git" />
+            <img src="https://raw.githubusercontent.com/github/explore/main/topics/linux/linux.png" className="h-20 w-20 mx-4 my-4" alt="Linux" />
             </div>
           </div>
         </div>

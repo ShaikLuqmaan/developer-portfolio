@@ -5,15 +5,15 @@ import FavouriteProjects from "../components/FavouriteProjects";
 import LatestCode from "../components/LatestCode";
 import getLatestRepos from "@lib/getLatestRepos";
 import userData from "@constants/data";
+import Homepage from '../components/Homepage';
 
 export default function Home({ repositories }) {
   return (
     <ContainerBlock
-      title="Luqmaan Shaik - Developer, Writer, Creator"
-      description="This is a template built specifically for my blog - Creating a developer portfolio that gets you a job."
+      title="Luqmaan Shaik - Web Developer"
+      description="Developer portfolio."
     >
-      <FavouriteProjects />
-      <LatestCode repositories={repositories} />
+      <Homepage/>
     </ContainerBlock>
   );
 }
